@@ -27,6 +27,9 @@ android {
         jni.srcDirs = [] // This prevents the auto generation of Android.mk
         manifest.srcFile 'src/main/AndroidManifest.xml'
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 repositories {
     flatDir {
